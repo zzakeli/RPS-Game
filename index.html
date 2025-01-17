@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game | Z</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      onclick="removeIndicator()"
+      class="indicator-container"
+      id="indicator-container"
+    >
+      <label id="notification">You Won!</label>
+    </div>
+    <div class="flex-container" id="flex-container">
+      <div class="you-label" id="you-label">(You)</div>
+      <div class="bot-label" id="bot-label">(Bot)</div>
+      <div class="user-container" id="user-container">
+        <img id="user-hand" src="Hands/rock.png" />
+      </div>
+      <button
+        onclick="switchHand()"
+        class="user-pick-button"
+        id="user-pick-button"
+      >
+        Switch
+      </button>
+      <div class="scoring-board-container" id="scoring-board-container">
+        <label class="user-score" id="user-score">0</label> -
+        <label class="bot-score" id="bot-score">0</label>
+      </div>
+      <button onclick="randomizeBotHand()" id="pick-button" class="pick-button">
+        Pick
+      </button>
+      <div class="bot-container" id="bot-container">
+        <img id="bot-hand" src="Hands/rock_flip.png" />
+      </div>
+      <label class="bot-pick-label" id="bot-pick-label">Rock</label>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
